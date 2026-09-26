@@ -12,6 +12,9 @@ export default function Navbar() {
     { href: "/contact", label: "Contact Us" },
     { href: "/students", label: "Students" },
     { href: "/about", label: "About" },
+    { href: "/user", label: "User" },
+    { href: "/admin", label: "Admin" },
+    { href: "/forms", label: "Forms" },
   ];
 
   const [menuOpen, setMenuOpen] = useState(false);
