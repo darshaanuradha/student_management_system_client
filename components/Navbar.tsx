@@ -1,11 +1,21 @@
 
 "use client";
 
+import { usePathname } from "next/dist/client/components/navigation";
 import Link from "next/link";
-import { useState } from "react";
+import { use, useState } from "react";
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+    const link = [
+        { href: "/", label: "Home" }, 
+        { href: "/apply", label: "Apply" }, 
+        { href: "/instructions", label: "Instructions" }, 
+        { href: "/contact", label: "Contact Us" }, 
+        { href: "/students", label: "Students" }, 
+        { href: "/about", label: "About" }
+    ];
+    const [menuOpen, setMenuOpen] = useState(false);
+    const pathname = usePathname();
 
   return (
     <nav className="sticky top-0 z-50 border-b border-[#e7ded5] bg-[#faf8f5]/95 backdrop-blur">
@@ -111,16 +121,6 @@ export default function Navbar() {
 
         {menuOpen && (
           <div className="border-t border-[#e7ded5] py-4 lg:hidden">
-
-            <div className="mb-4 border-b border-[#e7ded5] pb-4">
-              <p className="text-sm font-semibold text-[#795548]">
-                Nipunatha Sisu Saviya
-              </p>
-
-              <p className="text-xs text-[#8d8178]">
-                Student Portal
-              </p>
-            </div>
 
             <div className="flex flex-col gap-1">
 
