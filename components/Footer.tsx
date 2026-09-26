@@ -147,8 +147,8 @@ export default function Footer() {
 
         <div className="mt-10 flex flex-col gap-4 border-t border-[#5a4037] pt-6 sm:flex-row sm:items-center sm:justify-between">
 
-          <p className="text-xs text-[#b9aaa2]">
-            © 2026 University of Vocational Technology. All rights reserved.
+         <p className="text-xs text-[#b9aaa2]">
+               © {new Date().getFullYear()} University of Vocational Technology. All rights reserved.
           </p>
 
           <p className="text-xs text-[#b9aaa2]">

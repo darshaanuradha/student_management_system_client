@@ -189,12 +189,10 @@ export default function StudentManagementPage() {
       <div className="max-w-7xl mx-auto space-y-8">
         
         {/* Header Section */}
-        <div className="flex items-center gap-3 border-b border-slate-200 pb-5">
-          <div className="p-3 bg-indigo-100 text-indigo-600 rounded-lg">
-            <Users size={28} />
-          </div>
+        <div className="flex items-center gap-3 border-b border-slate-200 pb-5 pt-0 mt-0">
+         
           <div>
-            <h1 className="text-3xl font-bold tracking-tight text-slate-900">
+            <h1 className="text-2xl font-bold tracking-tight text-slate-900">
               Student Directory
             </h1>
             <p className="text-sm text-slate-500 mt-1">
