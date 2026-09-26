@@ -15,6 +15,7 @@ export default function Navbar() {
     { href: "/user", label: "User" },
     { href: "/admin", label: "Admin" },
     { href: "/forms", label: "Forms" },
+    { href: "/pictures", label: "Pictures" },
   ];
 
   const [menuOpen, setMenuOpen] = useState(false);

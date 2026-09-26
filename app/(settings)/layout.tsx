@@ -6,9 +6,9 @@ export default function SettingsLayout({
 }) {
   return (
     <>
-        <main className="min-h-screen max-w-7xl mx-auto flex flex-col bg-red-300">
+        <div className="min-h-screen max-w-7xl mx-auto flex flex-col bg-red-300">
                 {children}
-        </main>
+        </div>
     </>
   );
 }
